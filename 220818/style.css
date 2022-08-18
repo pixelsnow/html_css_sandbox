@@ -5,35 +5,31 @@
 }
 
 body {
-  font-family: "Open Sans Condenced", sans-serif;
+  background-color: rgb(233, 218, 220);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(33, 33, 33);
 }
 
-body a {
-  color: rgb(234, 218, 207);
-}
-
-header {
-  background-color: rgb(33, 73, 74);
-  padding: 40px;
-  color: rgb(234, 218, 207);
-}
-
-nav {
-  list-style: none;
-}
-
-.nav_item {
-  display: inline;
+h1 {
+  text-align: center;
+  font-size: 72px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 32px;
+  margin: 60px;
+  color: white;
 }
 
 .main_img {
-  width: 400px;
+  height: 450px;
+  width: auto;
   float: right;
   margin: 0px 20px;
 }
 
 .main_section {
-  padding: 20px;
+  padding: 32px;
 }
 
 .main_table {
@@ -48,7 +44,94 @@ nav {
   border-radius: 5px;
 }
 
-h1 {
-  text-align: center;
-  margin: 30px;
+/* Header area*/
+
+header {
+  background-color: rgb(33, 73, 74);
+  text-align: right;
+  color: rgb(246, 220, 206);
+}
+
+nav {
+  list-style: none;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.nav_item {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+nav a {
+  color: rgb(246, 220, 206);
+  text-decoration: none;
+}
+.nav_item:hover {
+  background-color: white;
+}
+
+/* Boxes */
+
+#boxes {
+  background: url("https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0")
+    no-repeat fixed center cover;
+}
+
+.box {
+  display: inline-block;
+  margin: 32px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+  height: 200px;
+  width: 200px;
+  background: rgb(33, 73, 74);
+  margin-bottom: 10px;
+}
+
+.box1 {
+  border-color: rgb(216, 144, 131);
+  border-width: 10px;
+  border-style: dotted;
+  border-bottom-left-radius: 195px;
+  border-top-right-radius: 195px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.box2 {
+  background-image: url(https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0);
+  background-size: 300px;
+  border-radius: 30px;
+  border-width: 10px;
+  border-style: groove;
+  border-color: rgb(255, 255, 255);
+}
+.box3 {
+  border-width: 15px;
+  border-style: solid;
+  border-color: rgb(73, 133, 123) rgb(221, 221, 153) rgb(27, 51, 79)
+    rgb(207, 124, 124);
+  background-color: white;
+}
+.box4 {
+  border-width: 15px;
+  border-style: groove;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(48, 95, 100),
+    rgb(251, 255, 129)
+  );
+  background-color: rgb(246, 220, 206);
+}
+.box5 {
+  border-width: 5px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 100px;
+  border-style: inset;
+  background-color: rgb(149, 193, 193);
 }
