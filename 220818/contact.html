@@ -54,6 +54,104 @@
           </tbody>
         </table>
       </section>
+      <section class="main_section">
+        <table class="main_table">
+          <thead>
+            <tr>
+              <th>Description</th>
+              <th>Input example</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>type="button"</td>
+              <td><input type="button" value="Click me" /></td>
+              <td>Needs value attribute for button text</td>
+            </tr>
+            <tr>
+              <td>type="checkbox"</td>
+              <td><input type="checkbox" />Check me</td>
+              <td>Checkbox text comes after input tag</td>
+            </tr>
+            <tr>
+              <td>type="color"</td>
+              <td><input type="color" value="#224444" /></td>
+              <td>Value sets default colour</td>
+            </tr>
+            <tr>
+              <td>type="date"</td>
+              <td><input type="date" /></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>type="email"</td>
+              <td><input type="email" /></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>type="range"</td>
+              <td><input type="range" min="10" max="35" /></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>type="hidden"</td>
+              <td><input type="hidden" /></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>type="password"</td>
+              <td><input type="password" /></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>textarea</td>
+              <td>
+                <textarea name="texta" id="texta" cols="30" rows="5"></textarea>
+              </td>
+              <td>
+                Size of textarea can be specified by cols and rows attributes
+                or, even better, thorugh CSS height and width properties
+              </td>
+            </tr>
+            <tr>
+              <td>Select</td>
+              <td>
+                <select name="c" size="4" multiple>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Datalist</td>
+              <td>
+                <input type="text" list="cars" />
+                <datalist id="cars">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+                </datalist>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Label</td>
+              <td>
+                <label>Click me <input type="text" /></label>
+              </td>
+              <td>
+                <label for="username">Click me</label>
+                <input type="text" id="username" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
   </body>
 </html>

@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(39, 79, 75);
+  color: blanchedalmond;
+  background-image: url(‘https://source.unsplash.com/200x200/?building’);
+}
+
+body p {
+  background: blueviolet;
+}
+cite ~ q {
+  background: black;
+}
