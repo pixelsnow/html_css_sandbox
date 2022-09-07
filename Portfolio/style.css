@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 14px;
+}
+
 body {
   background-color: rgb(35, 35, 35);
   color: azure;
@@ -13,7 +17,6 @@ body {
 }
 
 .main-text {
-  font-size: 15px;
   line-height: 1.5;
   font-weight: 300;
   padding-top: 10px;
@@ -50,9 +53,60 @@ a {
   list-style: none;
   background-color: black;
   padding: 30px 30px 30px 30px;
+  text-decoration: none;
 }
 
 .nav-elem {
   display: inline;
   padding: 0px 10px 0px 10px;
+}
+
+input,
+button,
+textarea {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+footer {
+  background-color: black;
+  padding: 1rem 0;
+}
+
+footer form {
+  width: 50vw;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+footer table td {
+  padding: 0.5rem;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+footer input {
+  width: 100%;
+  padding: 0.3rem;
+}
+
+table .center {
+  text-align: center;
+}
+
+.copyright {
+  padding: 0.5rem 0;
+  background-color: rgb(73, 73, 73);
+  text-align: center;
+}
+
+footer button {
+  background-color: rgb(255, 179, 65);
+  padding: 0.5rem;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  width: 40%;
 }
