@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pm {
+  border: 1px solid white;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-grow: 1;
+  flex: 1;
+}
+.site-title {
+  background-color: yellow;
+  float: left;
+  flex: 1;
+}
+
+header nav {
+  background-color: lightpink;
+  align-self: flex-end;
+  flex: 1;
+  height: 100%;
+}
+
+header nav ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+}
+
+header nav ul li {
+  flex: 1;
+}
+main {
+  flex: 1;
+  width: 100vw;
+  flex-grow: 8;
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+  /*   flex-grow: 1; */
+}
+
+main section {
+  height: 100%;
+  flex-grow: 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-title {
+  background-color: gray;
+  flex: 1;
+  flex-grow: 1;
+}
+.section-post-container {
+  background-color: blue;
+  display: flex;
+  flex: 1;
+  flex-grow: 6;
+}
+.post-meta {
+  flex: 1;
+  flex-grow: 1;
+  background-color: lightgreen;
+}
+.main-content-container {
+  flex: 1;
+  flex-grow: 3;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  flex: 1;
+  flex-grow: 1;
+  background-color: darkgray;
+}
+.main-content-img {
+  flex: 1;
+  flex-grow: 2;
+  background-color: yellow;
+}
+main aside {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.side-bar {
+  background-color: orange;
+  flex: 1;
+}
+.ads {
+  background-color: green;
+  flex: 1;
+}
+.other-stuff {
+  background-color: #ed60f7;
+  flex: 1;
+}
+
+footer {
+  flex: 1;
+  flex-grow: 1;
+  background-color: brown;
+}

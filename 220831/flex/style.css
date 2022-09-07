@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: gainsboro;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+}
+
+a:hover {
+  border-bottom: 6px solid lightcoral;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: lightseagreen;
+  color: white;
+}
+
+.logo {
+  flex: 3; /* numbers have to be different with ul */
+  text-transform: uppercase;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  flex: 1;
+}
+
+main {
+  display: flex;
+  height: 100vw;
+}
+
+aside {
+  display: flex; /* flex parent properties */
+  flex-direction: column;
+  background-color: lightpink;
+  flex: 1; /* flex child properties */
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  background-color: lightcyan;
+  align-content: flex-start; /* removes spaces between lines of boxes*/
+  flex: 2;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 5px;
+  background-color: lightcoral;
+  display: flex; /* center horisontally and vertically */
+  justify-content: center; /* center  */
+  align-items: center; /* center */
+}
