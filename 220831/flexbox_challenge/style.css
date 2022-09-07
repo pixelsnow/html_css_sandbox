@@ -22,7 +22,6 @@ header {
 }
 .site-title {
   background-color: yellow;
-  float: left;
   flex: 1;
 }
 
@@ -30,11 +29,11 @@ header nav {
   background-color: lightpink;
   align-self: flex-end;
   flex: 1;
-  height: 100%;
+  height: 100%; /* the magic line */
 }
 
 header nav ul {
-  height: 100%;
+  height: 100%; /* the magic line */
   list-style: none;
   display: flex;
   align-items: stretch;
