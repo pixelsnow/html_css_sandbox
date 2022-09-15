@@ -17,6 +17,10 @@ body {
   height: 100vh;
 }
 
+.item {
+  min-height: 100px;
+}
+
 .Stitle {
   background-color: yellow;
   grid-column: 1 / span 3;
@@ -33,13 +37,11 @@ body {
 
 .sidebar {
   background-color: orange;
-  grid-column: span 1;
   grid-row: span 2;
 }
 
 .meta {
   background-color: aquamarine;
-  grid-column: span 1;
   grid-row: span 5;
 }
 
@@ -51,7 +53,6 @@ body {
 
 .ads {
   background-color: greenyellow;
-  grid-column: 6 / span 1;
   grid-row: span 2;
 }
 
@@ -63,7 +64,6 @@ body {
 
 .stuff {
   background-color: violet;
-  grid-column: 6 / span 1;
   grid-row: span 2;
 }
 
