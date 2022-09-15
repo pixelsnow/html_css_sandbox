@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 0.2rem;
+  grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: repeat(6, 1fr);
+  height: 100vh;
+}
+
+.Stitle {
+  background-color: yellow;
+  /* grid-area: stitle; */
+  grid-column: 1 / span 3;
+}
+
+.nav {
+  background-color: lightpink;
+  width: 100px;
+  justify-self: end;
+  /* grid-area: nav; */
+  grid-column: span 1;
+}
+
+.Ptitle {
+  background-color: lightskyblue;
+  /* grid-area: ptitle; */
+  grid-column: span 5;
+}
+
+.sidebar {
+  background-color: orange;
+  grid-column: span 1;
+  grid-row: span 2;
+  /* grid-area: sidebar; */
+}
+
+.meta {
+  background-color: aquamarine;
+  grid-column: span 1;
+  grid-row: span 5;
+  /* grid-area: meta; */
+}
+
+.content {
+  background-color: lightsteelblue;
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.ads {
+  background-color: olivedrab;
+  grid-column: 6 / span 1;
+  grid-row: span 2;
+}
+
+.image {
+  background-color: yellow;
+  grid-column: span 4;
+  grid-row: span 3;
+}
+
+.stuff {
+  background-color: violet;
+  grid-column: 6 / span 1;
+  grid-row: span 2;
+}
+
+.footer {
+  background-color: tan;
+  grid-column: 1 / span 6;
+}

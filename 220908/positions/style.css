@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Assistant", sans-serif;
+}
+
+section {
+  background: #bebebe;
+  height: 400px;
+  width: 100vw;
+  padding: 1rem;
+  margin: 1rem 0;
+  z-index: -1;
+}
+
+.item {
+  height: 200px;
+  width: 200px;
+  background: coral;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+#section-a .item:nth-child(2) {
+  position: relative;
+  z-index: 3;
+}
+
+#section-a .item:nth-child(3) {
+  position: relative;
+  background: teal;
+  top: -100px;
+  left: 100px;
+  z-index: 2;
+}
+
+#section-b .item {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+#section-c {
+  position: relative;
+}
+
+#section-c .item {
+  position: absolute;
+  bottom: 0;
+  right: 200px;
+}
+
+#section-d {
+  height: 2000px;
+}
+#section-d .item {
+  position: sticky;
+  top: 1rem;
+}
+
+.material-icons {
+  color: #888;
+  font-size: 48px;
+}
+
+.material-icons:hover {
+  color: #777;
+}
