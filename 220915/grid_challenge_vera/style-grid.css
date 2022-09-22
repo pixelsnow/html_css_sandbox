@@ -71,3 +71,10 @@ body {
   background-color: tan;
   grid-column: 1 / span 6;
 }
+
+@media screen and {
+  body {
+  }
+  .grid-container {
+  }
+}

@@ -1,0 +1,64 @@
+:root {
+  --background-color: cornsilk;
+  --light-color: white;
+  --highlight-color: lightcoral;
+  --dark-color: #333;
+  --gradient: linear-gradient(
+    to right top,
+    rgb(156, 255, 217),
+    rgb(135, 233, 215),
+    lightskyblue,
+    #be94e6,
+    lightcoral
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 400;
+  color: white;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--gradient);
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: var(--dark-color);
+}
+
+.card {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 200px;
+  width: 150px;
+  margin: 0 auto;
+  background: var(--light-color);
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 3px rgba(51, 51, 51, 0.3);
+  transition: all 1s;
+}
+
+.card:hover {
+  transform: rotate(125deg);
+}
+
+.menu-item h1::after {
+  content: "";
+  height: 4px;
+  width: 0;
+  background: var(--highlight-color);
+  display: inherit;
+  transition: all 0.7s ease-in-out;
+}
+
+.menu-item:hover h1::after {
+  width: 100%;
+}

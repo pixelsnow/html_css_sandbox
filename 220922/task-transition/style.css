@@ -1,0 +1,63 @@
+:root {
+  --primary-color: rgb(254, 247, 200);
+  --secondary-color: lightgreen;
+  --neutral-color: rgb(209, 188, 228);
+  --dark-color: rgb(13, 119, 114);
+  --light-color: lightcoral;
+  --font: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--neutral-color);
+  font-family: var(--font);
+  color: var(--light-color);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.item {
+  background: var(--primary-color);
+  min-height: 300px;
+  border-radius: 0.5rem;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 3px var(--secondary-color), 3px 3px 5px var(--dark-color);
+  transition: all 2s ease-in-out;
+}
+
+.item:hover {
+  box-shadow: inset 0 0 500px var(--dark-color);
+  background: var(--secondary-color);
+}
+
+.circle {
+  margin: 2rem;
+  height: 100px;
+  width: 100px;
+  background: var(--secondary-color);
+  color: var(--dark-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 10px var(--dark-color), inset 0 0 5px var(--dark-color);
+  transition: height 2s, width 2s;
+}
+
+.circle:hover {
+  height: 400px;
+  width: 400px;
+}
