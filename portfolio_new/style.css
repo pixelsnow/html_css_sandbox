@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+
 :root {
   --pink: #e28bb7;
   --green: #71bdcc;
@@ -14,6 +16,70 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  padding-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-menu {
+  display: flex;
+}
+
+.main-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.menu-items {
+  padding: 2rem;
+}
+
+.socials {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+
+/* MAIN */
+
+.intro {
+  position: absolute;
+  bottom: 10vh;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 10rem;
+  color: white;
+}
+
+.intro p {
+  font-size: 2rem;
+}
+
+.intro p.before {
+  padding: 2rem 0;
+}
+
+.intro p.after {
+  /* margin-left: 20vw; */
+  padding: 2rem 0;
+}
+
+/* GRADIENT */
 
 .container {
   height: 80vh;
@@ -88,3 +154,5 @@
 }
 
 /* animated gradient idea credit: Coding Artist */
+
+/* FOOTER */
