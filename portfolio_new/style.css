@@ -87,8 +87,9 @@ h2 {
 }
 
 .main-menu a {
-  padding: 3rem 1rem;
+  padding: 0 0.5rem;
   transition: 0.1s;
+  font-size: 1.2rem;
 }
 
 .main-menu a:hover {
@@ -103,7 +104,11 @@ h2 {
 }
 
 .main-menu ul li:nth-child(4) {
-  margin-left: 2rem;
+  margin-left: 0.5rem;
+  padding-left: 2rem;
+}
+.main-menu ul li:last-child {
+  padding-right: 2rem;
 }
 
 /* MAIN */
@@ -308,6 +313,15 @@ footer {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
+  border: 2px solid black;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 /* MOBILE */
@@ -353,5 +367,11 @@ footer {
 
   .main-menu ul li:nth-child(4) {
     margin-left: 0;
+  }
+
+  #back_to_top {
+    font-size: 1.5rem;
+    height: 4rem;
+    width: 4rem;
   }
 }
