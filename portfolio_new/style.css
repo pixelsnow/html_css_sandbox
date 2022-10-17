@@ -22,16 +22,29 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
-  /* position: sticky;
-  top: 0; */
-}
 body {
   font-family: "League Spartan", sans-serif;
 }
 
-section {
-  min-height: 80vh;
+/* HEADER */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mob_button {
+  border: none;
+  padding: 1.5rem 1.8rem;
+  font-size: 2rem;
+  display: none;
+  background-color: black;
+  color: white;
 }
 
 a {
@@ -40,8 +53,8 @@ a {
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 }
 
 .logo {
@@ -57,13 +70,20 @@ h2 {
 }
 
 .main-menu {
-  display: flex;
+  /* display: flex; */
   min-height: 5rem;
 }
 
 .main-menu ul {
-  display: flex;
+  /* display: flex; */
   list-style: none;
+}
+
+.main-menu ul li {
+  display: inline-block;
+  padding: 2rem 0.5rem;
+  /* margin: 0 -0.5rem; */
+  /* background-color: rgba(83, 83, 192, 0.156); */
 }
 
 .main-menu a {
@@ -75,29 +95,22 @@ h2 {
   color: var(--purple);
 }
 
-.menu-items {
-  display: flex;
-  padding: 0 1rem;
-  /*  font-size: 1.2rem; */
-  justify-content: center;
-  align-items: center;
-}
-
-.socials {
+.social {
   background-color: black;
   color: white;
-  padding: 0 1rem;
-  display: flex;
-  font-size: 1.2rem;
-  justify-content: center;
-  align-items: center;
+  margin: 0 -0.2rem;
+  /* font-size: 1.2rem; */
 }
 
-#mob_button {
-  /* display: none; */
+.main-menu ul li:nth-child(4) {
+  margin-left: 2rem;
 }
 
 /* MAIN */
+
+section {
+  min-height: 80vh;
+}
 
 .intro {
   position: absolute;
@@ -299,29 +312,46 @@ footer {
 
 /* MOBILE */
 @media (max-width: 800px) {
-  nav ul {
+  .main-menu ul {
     display: none;
   }
+
   #mob_button {
-    background-color: transparent;
     display: block;
-    border: none;
-    color: white;
-    padding: 1rem;
   }
-  nav.responsive ul {
+
+  .main-menu.responsive ul {
+    border-top: 2px solid black;
     background-color: white;
     width: 100%;
     display: block;
     position: absolute;
     left: 0;
-    top: 85px;
+    top: 5.2rem;
+    margin: 0;
+    padding: 0;
   }
 
-  nav.responsive ul li {
+  .main-menu.responsive ul li {
     display: block;
+    margin: 0;
+    padding: 0;
   }
-  nav.responsive ul li a {
-    color: #032330;
+
+  .main-menu.responsive ul li a {
+    /* border-top: 2px solid black; */
+    display: block;
+    margin: 0;
+    text-align: right;
+    font-size: 2rem;
+    padding: 2rem 3rem;
+  }
+
+  .main-menu.responsive ul .social a {
+    /* text-align: left; */
+  }
+
+  .main-menu ul li:nth-child(4) {
+    margin-left: 0;
   }
 }
