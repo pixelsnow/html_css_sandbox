@@ -26,6 +26,11 @@ body {
   font-family: "League Spartan", sans-serif;
 }
 
+h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
 /* HEADER */
 
 header {
@@ -64,8 +69,8 @@ nav {
   align-items: center;
 }
 
-h2 {
-  font-size: 2rem;
+.logo h2 {
+  font-size: 1.8rem;
   font-weight: 300;
 }
 
@@ -232,27 +237,7 @@ h1 span {
   flex-wrap: wrap;
 }
 
-/* IMAGE */
-
-.img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-}
-
-img.me {
-  height: 400px;
-  width: 400px;
-}
-
 /* FORM */
-
-.contact-form-container {
-  width: 60%;
-  display: flex;
-  justify-content: left;
-}
 
 input,
 button,
@@ -270,19 +255,23 @@ input {
   margin: 0.5rem 0;
 }
 
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact-form {
   margin: 2rem;
   background-color: black;
   color: white;
-  border-radius: 35px;
+  border-radius: 2rem;
   padding: 3rem;
   max-width: 400px;
 }
 
 .contact-form h2 {
   margin: 0 0 2rem;
-}
-.contact-form form {
 }
 
 .contact-form button {
@@ -297,6 +286,59 @@ input {
 
 .contact-form h2 {
   text-align: center;
+}
+
+/* IMAGE AND ABOUT*/
+
+#about {
+  background: linear-gradient(to bottom, white, var(--violet));
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 50%;
+}
+
+img.me {
+  height: 400px;
+  width: 400px;
+  margin: 2rem;
+  -webkit-filter: drop-shadow(0px 2px 0px rgb(0, 0, 0));
+  filter: drop-shadow(0px 2px 0px rgb(0, 0, 0));
+}
+
+.about-text-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 50%;
+}
+
+.about-text {
+  border: 2px solid black;
+  border-radius: 2rem;
+  padding: 4rem;
+  max-width: 500px;
+  margin: 2rem;
+  background-color: white;
+}
+
+.about-text h2 {
+  text-align: center;
+  margin: 0 0 3rem;
+}
+
+.about-text ul li {
+  margin: 1.5rem 0 0;
+  line-height: 150%;
 }
 
 /* FOOTER */
