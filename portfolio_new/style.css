@@ -298,6 +298,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .img-container {
@@ -305,6 +306,7 @@ input {
   justify-content: right;
   align-items: center;
   width: 50%;
+  min-width: 500px;
 }
 
 img.me {
@@ -320,6 +322,7 @@ img.me {
   justify-content: left;
   align-items: center;
   width: 50%;
+  min-width: 500px;
 }
 
 .about-text {
