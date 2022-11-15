@@ -134,6 +134,7 @@ h1 {
   color: white;
   letter-spacing: -0.1rem;
   line-height: 83%;
+  word-wrap: break-word;
   /* TODO: add heavy font! */
 }
 
@@ -291,7 +292,9 @@ input {
 /* IMAGE AND ABOUT*/
 
 #about {
-  background: linear-gradient(to bottom, white, var(--violet));
+  background-color: white;
+  /* background: linear-gradient(to bottom, var(--violet), white) no-repeat fixed
+    center; */
 }
 
 #about {
@@ -344,6 +347,59 @@ img.me {
   line-height: 150%;
 }
 
+#projects {
+  background-color: #ddd;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+#project1 {
+  background-color: #5656c4;
+  grid-row: span 2;
+  grid-column: span 4;
+}
+#project2 {
+  background-color: #71bdcc;
+  grid-row: span 3;
+  grid-column: span 2;
+}
+#project3 {
+  background-color: #a94084;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+#project4 {
+  background-color: #b481e1;
+  grid-row: span 2;
+  grid-column: span 4;
+}
+#project5 {
+  background-color: #ddd;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+#project6 {
+  background-color: #ff8c9a;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+#project7 {
+  background-color: black;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+#project8 {
+  background-color: white;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+#project9 {
+  background-color: #71bdcc;
+  grid-row: span 2;
+  grid-column: span 4;
+}
+
 /* FOOTER */
 
 footer {
@@ -351,13 +407,14 @@ footer {
   padding: 0.5rem;
   color: white;
   text-align: center;
+  width: 100%;
 }
 
 #back_to_top {
   display: none;
   position: fixed;
   bottom: 2rem;
-  right: 2rem;
+  left: 2rem;
   border: 2px solid black;
   height: 3rem;
   width: 3rem;
@@ -367,9 +424,12 @@ footer {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  -webkit-filter: drop-shadow(2px 2px 0px rgb(255, 255, 255));
+  filter: drop-shadow(2px 2px 0px rgb(255, 255, 255));
 }
 
 /* MOBILE */
+
 @media (max-width: 800px) {
   .main-menu ul {
     display: none;
@@ -407,16 +467,57 @@ footer {
   }
 
   .main-menu.responsive ul .social a {
+    margin: -2rem 0;
+    /* text-align: left; */
+  }
+
+  .main-menu.responsive ul .social a:nth-child(4) {
+    /* margin: 0 0 -2rem; */
     /* text-align: left; */
   }
 
   .main-menu ul li:nth-child(4) {
     margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .container {
+    height: 65vh;
+  }
+
+  h1 {
+    font-size: 5rem;
   }
 
   #back_to_top {
     font-size: 1.5rem;
     height: 4rem;
     width: 4rem;
+  }
+
+  .about-text-container {
+    width: 100vw;
+  }
+  .about-text {
+    width: 95vw;
+    margin: 3rem auto;
+  }
+
+  img.me {
+    width: 95vw;
+    margin: 3rem auto;
+  }
+
+  .contact-form {
+    width: 95vw;
+    margin: 3rem auto;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 4rem;
+  }
+  img.me {
   }
 }
