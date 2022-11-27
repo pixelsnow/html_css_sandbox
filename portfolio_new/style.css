@@ -462,8 +462,9 @@ img.me {
   text-align: center;
   gap: 5rem;
 }
+
 .skill:nth-child(odd) {
-  background-color: var(--blue);
+  background-color: var(--pink);
 }
 
 progress[value] {
@@ -483,7 +484,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .skill {
-  background-color: var(--pink);
+  background-color: var(--green);
   padding: 3.5rem 2rem;
   border-radius: 2rem;
 }
