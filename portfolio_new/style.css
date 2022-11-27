@@ -347,56 +347,93 @@ img.me {
   line-height: 150%;
 }
 
+#projects {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+#projects h2 {
+  padding: 3rem;
+}
+
 .projects-grid {
+  background-color: black;
   height: 80vh;
-  background-color: #ddd;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(6, 1fr);
+  gap: 0.4rem;
 }
 
 #project1 {
   background-color: #5656c4;
+  background: url(./src/grid_img/gradient.png);
+  background-size: cover;
   grid-row: span 2;
   grid-column: span 4;
 }
 #project2 {
   background-color: #71bdcc;
+  background: url(./src/grid_img/style.png);
+  background-size: cover;
+  background-position: top;
   grid-row: span 3;
   grid-column: span 2;
 }
 #project3 {
   background-color: #a94084;
+  background: url(./src/grid_img/speed.png);
+  background-size: cover;
+  background-position: center;
   grid-row: span 2;
   grid-column: span 2;
 }
 #project4 {
   background-color: #b481e1;
+  background: url(./src/grid_img/poke.png);
+  background-size: cover;
+  background-position: center;
   grid-row: span 2;
   grid-column: span 4;
 }
 #project5 {
   background-color: black;
+  background: url(./src/grid_img/insurance.png);
+  background-size: cover;
+  background-position: center;
   grid-row: span 3;
   grid-column: span 2;
 }
 #project6 {
   background-color: white;
+  background: url(./src/grid_img/todo.png);
+  background-size: cover;
+  background-position: top;
   grid-row: span 2;
   grid-column: span 2;
 }
 #project7 {
   background-color: #ddd;
+  background: url(./src/grid_img/projects.png);
+  background-size: cover;
+  background-position: top;
   grid-row: span 2;
   grid-column: span 2;
 }
 #project8 {
   background-color: #ff8c9a;
+  background: url(./src/grid_img/contact.png);
+  background-size: cover;
+  background-position: top;
   grid-row: span 2;
   grid-column: span 2;
 }
 #project9 {
   background-color: #71bdcc;
+  background: url(./src/grid_img/pizza.png);
+  background-size: cover;
+  background-position: top;
   grid-row: span 2;
   grid-column: span 4;
 }
