@@ -276,7 +276,7 @@ input {
 }
 
 .contact-form button {
-  background-color: var(--purple);
+  background-color: var(--green);
   color: white;
   padding: 1rem 2rem;
   border: none;
@@ -438,6 +438,68 @@ img.me {
   grid-column: span 4;
 }
 
+/* SKILLS */
+
+#skills {
+  min-height: 60vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skills h2 {
+  padding: 3rem;
+}
+
+.skills_group {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  justify-content: space-around;
+  text-align: center;
+  gap: 5rem;
+}
+.skill:nth-child(odd) {
+  background-color: var(--blue);
+}
+
+progress[value] {
+  height: 1.5rem;
+  background: transparent;
+  -webkit-appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: black;
+  border-radius: 0.75rem;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: white;
+  border-radius: 0.75rem;
+}
+
+.skill {
+  background-color: var(--pink);
+  padding: 3.5rem 2rem;
+  border-radius: 2rem;
+}
+
+.skill p {
+  font-size: 3rem;
+  padding: 0 0 2rem 0;
+  color: white;
+}
+
+/* CONTACT */
+
+#contact {
+  background: linear-gradient(to bottom, var(--light), var(--violet));
+}
+
 /* FOOTER */
 
 footer {
@@ -452,7 +514,7 @@ footer {
   display: none;
   position: fixed;
   bottom: 2rem;
-  left: 2rem;
+  right: 2rem;
   border: 2px solid black;
   height: 3rem;
   width: 3rem;
