@@ -359,7 +359,7 @@ img.me {
 
 .projects-grid {
   background-color: black;
-  height: 80vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(6, 1fr);
